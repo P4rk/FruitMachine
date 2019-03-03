@@ -1,3 +1,4 @@
-SERVER_ID = 236165733774655488
-TOKEN = 'Mjg0MDk0NTQzMzI5MDk5Nzg3.DSWrlA.Nwh73IO594_IApVxkowRJPcMdv8'
+import os
 
+TOKEN = os.environ.get('TOKEN')
+SERVER_ID = os.environ.get('SERVER_ID')
