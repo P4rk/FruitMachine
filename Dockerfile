@@ -1,6 +1,10 @@
 FROM python:3.7.2-alpine3.9
 
-RUN mkdir /fruitemachine
-COPY . /fruitemachine/
+RUN mkdir /fruitmachine
+COPY ./ /fruitmachine/
 
-CMD ['python', '/fruitmachine/main.py']
+WORKDIR /fruitmachine
+
+RUN /fruitmachine/scripts/docker/install
+
+CMD ["python", "/fruitmachine/main.py"]
