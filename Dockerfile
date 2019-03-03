@@ -5,6 +5,7 @@ COPY ./ /fruitmachine/
 
 WORKDIR /fruitmachine
 
+RUN chmod +x /fruitmachine/scripts/docker/install
 RUN /fruitmachine/scripts/docker/install
 
 CMD ["python", "/fruitmachine/main.py"]
