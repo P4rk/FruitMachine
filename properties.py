@@ -1,4 +1,4 @@
 import os
 
 TOKEN = os.environ.get('TOKEN')
-SERVER_ID = os.environ.get('SERVER_ID')
+SERVER_ID = int(os.environ.get('SERVER_ID', 0))
