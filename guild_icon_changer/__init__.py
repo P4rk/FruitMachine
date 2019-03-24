@@ -23,8 +23,8 @@ async def icon_changer(client: discord.Client):
     with open(icon, 'rb') as file:
         bites = file.read()
 
-    server = client.get_guild(id=properties.SERVER_ID)
-    await server.edit(icon=bites)
+    server = client.get_server(id=properties.SERVER_ID)
+    await client.edit_server(server, icon=bites)
 
 
 def pick_icon() -> str:
