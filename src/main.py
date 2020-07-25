@@ -45,7 +45,7 @@ async def roll(ctx, dice: str):
         await ctx.send('dickhead.')
         return
     if limit > 500:
-        await ctx.send('Where you dropped as a baby,')
+        await ctx.send('Were you dropped as a baby,')
         await ctx.send(f'who has a {limit} sided dice?')
         if rolls > 1:
             sleep(1)
