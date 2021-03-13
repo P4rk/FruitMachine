@@ -1,11 +1,13 @@
-FROM python:3.6.8-alpine3.9
+FROM python:3.7.5
 
 RUN mkdir /fruitmachine
 COPY ./ /fruitmachine/
 
-WORKDIR /fruitmachine
+WORKDIR /fruitmachine/
 
 RUN chmod +x /fruitmachine/scripts/docker/install
 RUN /fruitmachine/scripts/docker/install
 
-CMD ["python", "/fruitmachine/main.py"]
+ENV PYTHONPATH "${PYTHONPATH}:/fruitmachine/src/"
+
+CMD ["python", "/fruitmachine/src/main.py"]

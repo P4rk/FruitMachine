@@ -1,5 +1,7 @@
 # FruitMachine
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f7666a8d8fb2455c9f1f0610691dca48)](https://www.codacy.com/app/P4rk/FruitMachine?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=P4rk/FruitMachine&amp;utm_campaign=Badge_Grade)
+
 A Discord bot that changes the image of a guild.
 
 ![Apple](images/guild-icons/apple.png)

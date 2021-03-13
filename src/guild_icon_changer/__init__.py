@@ -23,11 +23,11 @@ async def icon_changer(client: discord.Client):
     with open(icon, 'rb') as file:
         bites = file.read()
 
-    server = client.get_server(id=properties.SERVER_ID)
-    await client.edit_server(server, icon=bites)
+    server = client.get_guild(id=properties.SERVER_ID)
+    await server.edit(icon=bites)
 
 
 def pick_icon() -> str:
-    icons = glob.glob('images/guild-icons/*')
+    icons = glob.glob('src/images/guild-icons/*')
     icon_index = random.randint(0, len(icons)-1)
     return icons[icon_index]

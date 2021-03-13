@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: fruit-machine
-        image: gcr.io/fruitmachine/github.com/p4rk/fruitmachine:0.0.5
+        image: gcr.io/fruitmachine/github.com/p4rk/fruitmachine:0.1.0
         envFrom:
           - secretRef:
               name: fruitmachine-secrets
